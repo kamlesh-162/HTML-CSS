@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  ||VARIABLES */
+:root{
+    /* || Color || */
+    --BGCOLOR:#455580;
+    --ALTBGCOLOR:#1e293b;
+    --RADIALCOLOR:whitesmoke;
+    --lightCOLOR:whitesmoke;
+    --DARKCOLOR:#000;
+
+    /* || font || */
+    --FS: max(1.75em ,3hv);
+    --FS-xl: 3rem;
+
+    /* || general || */
+    --PADDING:0.5em;
+}
+
+ 
+body{
+    min-height:100vh;
+    background-color: var(--BGCOLOR);
+    background-image: radial-gradient(var(--RADIALCOLOR), var(--BGCOLOR));
+    display: flex;
+    flex-direction: column;
+}
+
+header, nav, main, footer {
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
+    text-align: center;
+}
+header, footer{
+    position: sticky;
+    background-color: var(--ALTBGCOLOR);
+    color: antiquewhite;
+    text-align: center;
+
+}
+header{
+    top: 0;
+}
+
+nav{
+    background-color:var(--lightCOLOR);
+    color: var(--DARKCOLOR);
+    
+    border-bottom: 2px solid #000;
+    font-weight: bolder;
+    box-shadow: 0 8px 9px -5px  var(--DARKCOLOR);
+   
+}
+main {
+    font-size: 2rem;
+    flex-grow: 1;
+    padding: var(--PADDING);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+   
+   
+}
+main section{
+    flex-grow: 1;
+    padding: var(--PADDING);
+}
+main aside{
+    background-color: #1e293b;
+    color: var(--lightCOLOR);
+    font-size: var(--FS);
+    font-style: italic;
+    padding: var(--PADDING);
+}
+.contant{
+    margin-top: 20px;
+}
+
+.tooltip{
+    border-bottom: 1px dashed darkgoldenrod;
+    position: relative;
+}
+.tooltip:hover::before{
+    content: attr(data-tooltip);
+    position: absolute;
+    top: -20px;
+    white-space: onwrap;
+    background-color: var(--DARKCOLOR);
+    padding: var(--PADDING);
+    border-radius: 15px;
+}
+
+footer{
+    bottom: 0;
+}
+a:any-link{
+    color: firebrick;
+}
+a:hover, a:focus{
+    opacity: 0.6;
+    filter: hue-rotate(180deg);
+}
+
+@media  screen and (min-width: 576px) {
+    main{
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    main section{
+        width:calc(70%-5px);
+    }
+    main aside{
+        width:calc(30%-5px);
+    }
+    
+}
+
+
+
+
+
+

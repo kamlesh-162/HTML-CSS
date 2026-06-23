@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{display: block;}
+
+/* end reset */
+
+/* utility classes */
+.nowarp{
+    white-space: nowrap ;
+}
+
+.offscreen{
+    position: absolute;
+    left: -10000px;
+}
+/* end utility classes */
+
+
+body{
+    min-height: 100vh;
+    background-color: rgb(255, 254, 183);
+}
+.con{
+    background-image: url('./back\ \(1\).png');
+    background-repeat: repeat;
+    background-size: cover;
+    
+}
+
+
+.hero{
+    border-bottom: 2px solid black;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:30px;
+    background-color: rgba(0, 0, 0, 0.048);
+    
+}
+h1{
+    font-size:500% ;
+    color:beige;
+    text-shadow:  7px 3px 4px black ;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+}
+
+.profile{
+    width: 35%;
+}
+.profile img{
+    width: 100%;
+    height: auto;
+    min-width: 100px;
+    border: 9px double  rgb(12, 12, 12);
+    border-radius: 50%;
+
+}
+
+
+
+/*  this is code for only section first code */
+.example{
+    margin-top: 1rem;
+    padding-left: 20px;
+    border: 1px solid red;
+}
+
+.example img{
+    width: 25%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

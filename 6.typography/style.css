@@ -1,0 +1,53 @@
+/* 
+
+       typography is the way that 
+       text is arranged nd presented 
+       
+*/
+body{
+    padding: 10%;
+    font-size: 1.2rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+input,button{
+    font: inherit;
+}
+.para{
+    line-height:2;
+    letter-spacing:.2em;
+    word-spacing: 1em;
+}
+.p1{
+      font-weight:900;
+     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

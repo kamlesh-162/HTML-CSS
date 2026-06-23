@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+   min-height: 100vh;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+}
+
+
+
+
+/* ===== NAVBAR ===== */
+.header {
+    position: sticky;
+    top: 0;
+    background: #1e293b;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+
+/* ===== MENU ===== */
+.menu-item {
+    position: relative;
+    cursor: pointer;
+    padding: 4px;
+   
+}
+.menu-item:hover{
+    color: #1e293b;
+    border-radius: 1.1rem;
+    background-color: #f1f5f9;
+}
+
+/* ===== DROPDOWN ===== */
+.dropdown {
+    border: black 3px double;
+    border-radius: 1.2rem;
+    position: absolute;
+    top: 110%;
+    right: 0;
+    background: rgb(255, 255, 255);
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+
+    transition: all 0.3s ease;
+}
+
+
+.dropdown a {
+    padding: 12px;
+    text-decoration: none;
+    color: #1e293b;
+    transition: background 0.3s;
+}
+
+.dropdown a:hover {
+    text-decoration: underline;
+    border-radius: 1.2rem;
+    background: #d5deeb;
+}
+
+/* ===== SHOW MENU ON HOVER ===== */
+.menu-item:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* ===== PAGE CONTENT ===== */
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ===== footer ===== */
+
+/* ===== FOOTER ===== */
+.footer {
+    background: #1e293b;
+    color: #f1f5f9;
+    padding: 40px 20px 20px;
+}
+
+.footer-container {
+   
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+
+/* MENU */
+.footer-menu {
+    flex-grow: 1;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.footer-menu a {
+    position: relative;
+    text-decoration: none;
+    color: #f1f5f9;
+    font-size: 1rem;
+    padding: 5px ;
+    transition: color 0.3s ease;
+}
+
+/* UNDERLINE ANIMATION */
+.footer-menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background: #38baf8;
+    transition: width 0.3s ease;
+}
+
+.footer-menu a:hover {
+    color: #38bdf8;
+}
+
+.footer-menu a:hover::after {
+    width: 100%;
+}
+
+/* COPYRIGHT */
+.footer-copy {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+
+

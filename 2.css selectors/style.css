@@ -1,0 +1,28 @@
+*{
+    font-style:italic;
+}
+body{
+    background-color: rgb(133, 133, 133);
+    font-size: 22px;
+}
+
+h1{
+    color: aqua;
+}
+h2{
+    color: rgb(1, 255, 35);
+}
+p{
+    color: purple;
+}
+span{
+    text-transform: uppercase;
+    background-color: gold;
+}
+.span2{
+    text-transform: uppercase;
+    background-color: rgb(255, 0, 0);
+}
+.para1{
+    color: blue;
+}

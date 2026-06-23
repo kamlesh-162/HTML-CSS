@@ -1,0 +1,44 @@
+<!-- 
+Online HTML, CSS and JavaScript editor to run code online.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Browser</title>
+  <style>
+    body {
+  margin: 20px;
+}
+h1{
+  padding: 1rem;
+  position:relative;
+  width:max-content;
+}
+h1::after{
+  content:'';
+  background: red;
+  height: 4px;
+  width:0%;
+  position :absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s;
+
+}
+h1:hover::after{
+    width: 100%;
+    color: brown;
+}
+  </style>
+</head>
+
+<body>
+  <h1>kya hua</h1>
+ 
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+body{
+    font-size: 2rem;
+}
+
+
+p{
+    background-color: lightgray;
+    
+}
+.opposite{
+    display: inline-block;
+    background-color: #1f1f1f;
+    color: rgb(240, 219, 193);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 50px;
+    padding:4rem;
+}
+ul{
+    list-style-type: none;
+    text-align: right;
+    padding-left: 0.5rem;
+    background-color: rgb(114, 97, 74);
+    margin: 0;
+}
+li{
+    display: inline-block;
+    margin-inline: 0.5rem;
+}
+li a{
+    color: aliceblue;
+    text-decoration: none;
+
+}
+li a:hover,a:focus{
+    text-decoration: underline;
+
+}
