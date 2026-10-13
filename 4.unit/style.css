@@ -26,7 +26,8 @@ main{
     font-size: 1rem;
      margin: 2rem;
      padding: 10px;
-     border: 4px rgb(34, 34, 238) solid;}
+     border: 4px rgb(34, 34, 238) solid;
+}
 p{
     font-size: 1rem;
     width: 45vw;

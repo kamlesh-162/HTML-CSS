@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>object</title>
+</head>
+<body>
+
+  <h1>hi js object</h1>
+
+  <script>
+    const product={
+      name:'socket',
+      price:1090
+    };
+
+    console.log(product);
+    console.log(product.name);
+    console.log(product.price);
+
+    product.name='cotton';
+    
+    console.log(product);
+    console.log(product.name);
+
+    product.newpro=true;
+     console.log(product);
+    console.log(product.name);
+
+    delete product.newpro;
+     console.log(product);
+    console.log(product.name);
+
+    // acsses
+     
+    console.log('acsses=====');
+    console.log(product.name);
+    console.log(product['name']);
+
+
+    const product2={
+      name:'socket',
+      price:1090,
+      rating:{
+        star:4.5,  // nested object
+        count:87
+      },
+
+      fun:function fun1(){
+           console.log('function inside object');
+      }
+    };
+
+    console.log(product2);
+    console.log(product2.name);
+    console.log(product2['name']);
+    console.log(product2.rating.star);
+
+    product2.fun();
+
+    console.log(typeof console);
+    console.log(typeof console.log);
+
+    
+
+    console.log(JSON.stringify(product2)); // js object to JSON
+    console.log(typeof JSON.stringify(product2));
+
+    const jsonstring=JSON.stringify(product2);
+
+    console.log(JSON.parse(jsonstring));  //  JSON to js object
+
+
+  </script>
+</body>
+</html>

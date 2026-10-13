@@ -3,8 +3,8 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
     background-color: papayawhip;
-    color: rgba(0, 0, 139, 0.89);
+    color: rgba(5, 5, 173, 0.89);
 }
 p{
-    color: hsl(0, 0%, 23%);
+    color: hsl(236, 79%, 17%);
 } 

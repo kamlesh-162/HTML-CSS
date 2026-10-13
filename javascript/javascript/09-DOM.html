@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+</head>
+<body>
+  <button>hello</button>
+  <button class="js">second</button>
+  <h1>hello</h1>
+  <div><h3>hello</h3></div>
+  <div><h4>hello</h4></div>
+  <div><h6>hello</h6></div>
+
+  <script>
+
+
+    console.log(document.querySelector('button').innerHTML);
+
+    document.querySelector('button').innerHTML='Changed';
+    console.log(document.querySelector('.js').innerHTML);
+
+    const buttonElement=document.querySelector('.js');
+
+  //  console.log(document.title);
+  //  document.title='hello';   // title
+  //  console.log(document.title);
+
+  //  console.log(document.body);
+  //  console.log(typeof document.body);
+   
+
+  //  console.log(document.body.innerHTML);
+  // //  document.body.innerHTML='changed';   // changes all html code
+  //  document.body.innerHTML='<button>hello</button>'; 
+
+    // document.body.innerHTML='hello';
+    // document.title='Good job';
+    
+    String(25); // convert into num;
+    let s='25';
+    console.log(typeof s);
+    console.log(typeof  Number(s));
+   
+    Number('25');  // converted into numb
+    let d=25;
+    console.log(typeof d);
+    console.log(typeof  String(d));
+    
+    console.log('25'-5);    //num for(-,/,*)
+    console.log('25'+5);    // strng for (+)
+  </script>
+</body>
+</html>

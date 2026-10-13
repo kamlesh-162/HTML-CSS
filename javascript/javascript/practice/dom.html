@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM-practice</title>
+</head>
+<body>
+
+    write your name: <input type="text" class="input" onkeydown=" show(event);" oninput="display();" placeholder="enter name here" >
+    <button onclick=" display();"> Enter</button>
+    <p class="greet"></p>
+
+    <hr>
+    <h1>toss a coin </h1>
+    <h3>- Select the  choice below</h3>
+    <button class="head" onclick="userch('head');"  >Head</button>
+    <button class="tail" onclick="userch('tail');">Tails</button>
+    <p class="userchoss"></p>
+    <p><button class="toos" onclick=" toss(); ">TOSS</button> <samp>ans=</samp><span class="toosresult"></span></p>
+    <p class="result"></p> 
+
+    <script>
+      // name display
+     function display(){
+        let name=document.querySelector(".input").value;
+        
+        document.querySelector(".greet").innerHTML=`Hi! ${name}.`;
+     }
+
+    function show(event){
+      display();
+      console.log(event.key);
+      // if(event.key==='Enter'){
+      //   display();
+      // }
+    }
+
+
+
+      // toss game
+      let user='';
+      function userch(userans){
+         if(userans==='head'){
+          user='head';
+         }else{
+          user='tails';
+         }
+         console.log(user);
+         alert=`you choose ${user}`;
+         document.querySelector(".userchoss").innerHTML=`you choose ${user}`;
+      }
+
+     function toss(){
+       const coin=Math.random();
+       let coinside='';
+       if(coin<0.5){
+         coinside='head';
+       }else{
+        coinside='tails';
+       }
+
+       document.querySelector(".toosresult").innerHTML=`${coinside}`;
+
+       if(user===coinside){
+        document.querySelector(".result").innerHTML=`win`;
+       }else{
+         document.querySelector(".result").innerHTML=`loss`;
+       }
+     }
+
+
+
+     // name display
+
+    </script>
+</body>
+</html>

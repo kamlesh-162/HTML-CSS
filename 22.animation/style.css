@@ -46,7 +46,7 @@ div:nth-child(2){
     /* transform: skewX(10deg); */
 }
 div:nth-child(3){
-    border-radius: 50% ;
+    border-radius: 100% ;
     background-color: limegreen;
     /* transform: translate(100%); */
     /* transform: rotateZ(40deg); */
@@ -60,10 +60,10 @@ div:hover{
     transition-duration: 1s,2s;
     transition-delay: 0.5s; */
     /* transition-timing-function: ease; */
-    transition: all 2s ease-in-out 0.5s;
+    transition: all 0.2s ease-in-out 0.2s;
 }
 div:last-child:hover{
-    transform: rotate(180deg);
+    transform: rotate(90deg);
 }
 
 
@@ -82,10 +82,10 @@ div:last-child:hover{
     0%{
         transform: translateX(0);
     }
-    33%{
+    25%{
         transform: translateX(30px) rotate(180deg) ;
     }
-    66%{
+    50%{
         transform: translateX(-30px) rotate(-180deg) ;
     }
     100%{
